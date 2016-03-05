@@ -29,13 +29,29 @@
         <li ><%= link_to "Projects", projects_path %></li>
         <li ><%= link_to "Contact", contact_path %></li>
 
+        <% if current_user %>
+          <li><%= link_to "Logout", '/logout' %></li>
+        <% else %>
+          <li><%= link_to "Login", '/login' %></li>
+        <% end %>  
+
         </ul>
       </div>
     </div>
   </nav>
 
+  <% flash.each do |name, msg| %>
+    <% if name == "error" %>
+      <p class="alert-danger">
+    <% else %>
+      <p class="alert-success">
+    <% end %>
+  <% end %>
+  
 <div id='background'> 
 </div>
+
+
 <%= yield %>
 
 </body>
