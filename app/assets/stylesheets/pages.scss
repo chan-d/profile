@@ -4,16 +4,6 @@
 
 
 
-
-/*body {
-	background: url(profile_jumbo.jpg) no-repeat center center fixed;
-	background-size: cover;
-	opacity: 0.6;
-	color: white;
-
-}*/
-
-
 #background {
 	position: fixed;
 	width: 100%;
@@ -21,11 +11,25 @@
 	background-image: url('profile_jumbo.jpg');
 	opacity: 0.8;
 	background-size: cover;
-	margin-top: -635px;
+	top: 15px;
 	z-index: -1;
+	
 
 }
+.page{
 
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: url('profile_jumbo.jpg');
+	opacity: 0.8;
+	background-size: cover;
+	margin-top: 0px;
+	z-index: -1;
+	
+
+
+}
 
 .container { 
 	z-index: 1;
@@ -43,8 +47,33 @@
 	p { 
 		color: white;
 		opacity: 1;
+
 	}
 	i {
 		opacity: 1;
 	}
+
+	ul li {
+		font-size: 24px;
+	}
+	
+
+}
+
+
+/* Navbar Hamburger menu */
+
+.navbar {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+}
+
+.nav li {
+	display: inline;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	transition: 0.7s all linear;
+	height: 100%;
 }
