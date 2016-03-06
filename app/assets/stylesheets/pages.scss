@@ -16,23 +16,9 @@
 	
 
 }
-.page{
-
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-image: url('profile_jumbo.jpg');
-	opacity: 0.8;
-	background-size: cover;
-	margin-top: 0px;
-	z-index: -1;
-	
-
-
-}
 
 .container { 
-	z-index: 1;
+	z-index: 2;
 	max-width: 350px; 
 	margin: 100px auto; 
 	padding: 20px;  
@@ -42,6 +28,11 @@
 
 	h1 {
 		color: limegreen;
+	}
+
+	h2{
+		font-size: 12px;
+		text-align: center;
 	}
 
 	p { 
@@ -60,7 +51,16 @@
 
 }
 
+input[type=text]{
+	color: black;
+}
 
+.top_index{
+	position: relative;
+	top: 100px;
+	min-height: 100px;
+	z-index: 5;
+}
 /* Navbar Hamburger menu */
 
 .navbar {

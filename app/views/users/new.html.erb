@@ -3,10 +3,10 @@
 
 <%= form_for :user, url: '/users' do |f| %>
 
-  <p>Name: <%= f.text_field :name %></p>
-  <p>Email: <%= f.text_field :email %></p>
-  <p>Password: <%= f.password_field :password %></p>
-  <p>Password Confirmation: <%= f.password_field :password_confirmation %></p>
+  <p>Name: </p> <h2><%= f.text_field :name %></h2>
+  <p>Email: </p> <h2><%= f.text_field :email %></h2>
+  <p>Password: </p> <h2><%= f.password_field :password %></h2>
+  <p>Password Confirmation: </p> <h2><%= f.password_field :password_confirmation %></h2>
   <p><%= f.submit "Submit", class: 'btn btn-success' %></p>
 
 <% end %>
