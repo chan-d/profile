@@ -1,0 +1,43 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post_container { 
+	z-index: 2;
+	width: 720px; 
+	margin: 100px auto; 
+	padding: 20px;  
+	background-color: rgba(0,0,0,0.6); 
+	text-align: center; 
+	border-radius: 40px;
+
+	h1 {
+		color: limegreen;
+	}
+	h2{
+		margin-top: -10px;
+		color: limegreen;
+		font-size: 24px;
+	}
+	p { 
+		color: white;
+		opacity: 1;
+
+	}
+	i {
+		opacity: 1;
+	}
+	
+}
+.button_to {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.panel-body{
+	background-color: rgba(0,0,0,0.6); 
+}
+
+.panel-footer{
+	background-color: rgba(0,0,0,0.6); 
+}

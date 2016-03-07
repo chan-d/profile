@@ -1,0 +1,13 @@
+<div class='post_container'>
+	<% @post.each do |post| %>
+		<div class='panel panel-info'>
+			<div class='panel-heading'> <h2><%= post.title %></h2><strong>Date Created:</strong> <%= post.date %>
+				</div>
+			<div class='panel-body'><strong>Post:</strong> <%= post.post %> 
+															
+				</div>
+
+		</div>	
+			<br>
+	<% end %>
+</div>

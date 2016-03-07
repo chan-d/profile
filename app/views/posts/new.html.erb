@@ -1,0 +1,13 @@
+<div class='container'>
+
+	<%= form_for @post do |f| %>
+	<p>Date: </p><%= f.date_select :date %>
+ <p>Title: </p><%= f.text_field :title %>
+  <p>Post: </p><%= f.text_area :post %> <br> 
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.submit "Save Post", class: 'btn btn-success' %>
+<% end %>
+
+</div>
+
+

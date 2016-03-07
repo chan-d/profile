@@ -25,11 +25,12 @@
 
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right">
-        <li ><%= link_to "About Me", about_me_path %></li>
+        <li ><%= link_to "Blog", posts_path %></li>
         <li ><%= link_to "Projects", projects_path %></li>
         <li ><%= link_to "Contact", contact_path %></li>
 
         <% if current_user %>
+          <li><%= link_to "Profile", user_path(current_user) %></li>
           <li><%= link_to "Logout", '/logout' %></li>
         <% else %>
           <li><%= link_to "Login", '/login' %></li>
@@ -39,6 +40,7 @@
       </div>
     </div>
   </nav>
+
 <div class='top_index'> 
   <% flash.each do |name, msg| %>
     <% if name == "error" %>
@@ -48,6 +50,7 @@
     <% end %>
   <% end %>
 </div>  
+
 <div id='background'> 
 </div>
 

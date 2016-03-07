@@ -1,6 +1,22 @@
+<div class='container'><%= link_to "New Post", '/posts/new', class: 'btn btn-info' %></div>
+
 
 <div class='container'>
-	
-this is the profile page
-</div>
+	<% @posts.each do |post| %>
+	<div class='panel panel-info'> 
+		<div class="panel-heading"> <%= post.title %><br> <strong>Date posted: </strong><%= post.date %></div>
+		<div class="panel-body"> <p><%=  post.post %>
+													
+
+		</p> </div>
+
+		<div class="panel-footer"> 
+		<%= button_to 'Edit Post', edit_post_path(post.id), method: :get, class: "btn btn-warning" %>
+		<%= button_to 'Delete Post', delete_post_path(post.id), method: :delete, class: "btn btn-danger" %> </div>
+			
+		</div>
+		<% end %>
+
+	</div>
+
 

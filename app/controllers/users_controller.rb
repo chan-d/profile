@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
   def show
   	@user = User.find_by_id(params[:id])
-
+  	@posts = @user.posts.all.order("created_at DESC")
     if @user != current_user
       redirect_to current_user
     end
