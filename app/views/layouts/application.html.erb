@@ -26,9 +26,10 @@
 
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right">
-        <li ><%= link_to "Blog", posts_path %></li>
-        <li ><%= link_to "Projects", projects_path %></li>
-        <li ><%= link_to "Contact", contact_path %></li>
+        <li><%= link_to "Blog", posts_path %></li>
+        <li><%= link_to "Projects", projects_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+        <li> <%= link_to 'Resume', 'https://docs.google.com/document/d/1fmRfXk7JbxISLD5OjRwGxRd53JrOQOg1oP0urh6e3yo/edit?usp=sharing' %> </li>
 
         <% if current_user %>
           <li><%= link_to "Profile", user_path(current_user) %></li>
