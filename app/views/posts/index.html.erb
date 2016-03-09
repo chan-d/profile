@@ -1,6 +1,6 @@
 <div class='col-sm-12'> 
 <div class='post_container'>
-	<div class='panel panel-info'>
+	<div class='panel panel-info project'>
 		<div class='panel-heading'>
 			<h1>Blog posts<h1>
 		</div>
@@ -14,7 +14,7 @@
 
 <div class='post_container'>
 	<% @post.each do |post| %>
-		<div class='panel panel-info'>
+		<div class='panel panel-info project'>
 			<div class='panel-heading'> <h2><%= post.title %></h2><strong>Date Created:</strong> <%= post.date %>
 				</div>
 			<div class='panel-body'><p><%= post.post %></p> 

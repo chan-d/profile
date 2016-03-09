@@ -47,9 +47,24 @@
 	ul li {
 		font-size: 24px;
 	}
+	.project{
+	border-color: rgba(210,18,18,0.5);
+	border-style: solid;
+	border-width: 2px;
+	}
+
+	.panel-info{
+		background-color: rgba(210,18,18,0.5);
+			.panel-heading{
+				background-color: rgba(210,18,18,0.5);
+				border-bottom-color:  rgba(210,18,18,0.5);
+				font-size: 24px;
+			}
+	}
 	
 
 }
+
 
 input[type=text]{
 	color: black;
